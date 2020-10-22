@@ -7,7 +7,7 @@ import Client from '../Models/Client';
 
 class ClientRepository implements IClientRepository<IPedido> {
     save = async (data: IPedido): Promise<any> => {
-        return Pedido.create(data)
+        return Client.create(data)
       };
 
     getAll = async (): Promise<IPedido[] | undefined> => Client.find();
@@ -15,7 +15,7 @@ class ClientRepository implements IClientRepository<IPedido> {
     getById = async (id: Object): Promise<IPedido | undefined> => Pedido.find(id);
 
     search = async (search: Object): Promise<IPedido[]> => 
-    Pedido.find(search);
+    Client.find(search);
 
 
     delete = async (nome: String): Promise<IPedido | undefined> => Pedido.deleteOne(nome);
