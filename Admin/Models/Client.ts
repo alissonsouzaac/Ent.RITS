@@ -13,7 +13,7 @@ const ClientSchema = new Schema({
         validate: function (name: String) { if(name == null || name.length == 0){ return false }},
         required: true,
     },
-    nome: {
+    name: {
         type: String,
         validate: function (name: String) { if(name == null || name.length == 0){ return false }},
         required: true,
