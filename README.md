@@ -26,7 +26,9 @@ Rota responsável para listar todos os pedidos feito pelo cliente. Não precisa 
 GET:http://localhost:9000/cliente/ver
 
 {
-    "codProd": "1"
+    
+    "codProd": "1",
+    
 }
 
 Rota responsável para mostrar um pedido expecifico basta especificar um campo mais conveniente para a busca.
