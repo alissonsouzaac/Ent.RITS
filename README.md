@@ -9,11 +9,13 @@ Poderá ser executa entrando na pasta pelo terminal e utilizando o comando "npm 
 POST:http://localhost:9000/
 
 {
+    
     "name": "Alisson",
     "email": "alisson.315@hotmail.com",
-    "phone": "81992893009",
-    "endereco": "rua do jasmim"
+    "phone": "81992893002"
+    
 }
+
 
 Parte do NotClient para cadastrar o novo cliente e os dados necessários para testar via postman.
 
@@ -47,8 +49,11 @@ Rota responsável para a criação de pedido. "o resto dos dados são preenchido
 DELETE: http://localhost:9000/cliente/deletar
 
 {
-    "codClient": "6b0a5be8-bcfc-4815-a2f8-db5c074d00fd"
+    
+        "codClient": "6b0a5be8-bcfc-4815-a2f8-db5c074d00fd"
+    
 }
+
 
 Rota responsável por deletar o pedido atráves do código do cliente.
 
@@ -57,21 +62,25 @@ Rota responsável por deletar o pedido atráves do código do cliente.
 POST: http://localhost:9090/
 
 {
-    "nid": "08320305462",
+    
+    "nid": "08320305469",
     "fullName": "ALISSON COSTA",
-    "phone": "81992893009",
-    "email": "alisson.315@hotmail.com",
+    "phone": "81992893002",
+    "email": "alisson315@hotmail.com",
     "password": "123456"
-
+    
 }
+
 
 Rota responsável por salvar um administrador.
 
 POST: http://localhost:9090/login
 
 {
-    "email": "alisson.315@hotmail.com",
+    
+    "email": "alisson315@hotmail.com",
     "password": "123456"
+    
 }
 
 Rota responsável pelo login do admin.
@@ -89,16 +98,22 @@ Lista todos os clientes. Nõa precisa de dados.
 GET: http://localhost:9090/admin/produto
 
 {
+    
     "cod": "30"
+     
 }
+
 
 Pesquisa um produto especifico passando como parametro o "cod" do produto.
 
 GET: http://localhost:9090/admin/cliente
 
 {
+    
     "name": "Alisson"
+     
 }
+
 
 
 Pesquisa um cliente especifico passando como parametro o "name" do cliente.
@@ -106,46 +121,61 @@ Pesquisa um cliente especifico passando como parametro o "name" do cliente.
 POST: http://localhost:9090/admin/produto
 
 {
+    
     "name": "coxinha",
     "preco": "2",
     "cod": "30"
+     
 }
+
 
 Rota para adicionar produtos pelo admin.
 
 POST: http://localhost:9090/admin/cliente
 
 {
+    
     "name": "Alisson",
     "email": "alisson.315@hotmail.com",
-    "phone": "81992893009",
+    "phone": "81992893006",
     "endereco": "rua do jasmim"
+     
 }
+
 
 Cria cliente pelo Admin. Obs: sem a verificação se já existe email ou phone já cadastrados.
 
 PUT: http://localhost:9090/admin/produto
 
 {
+    
     "cod": "1",
     "preco": "3"
+     
 }
+
 
 Faz atualização dos produtos pelo "cod" e passa o campo que deseja ser alterado.
 
 PUT: http://localhost:9090/admin/status
 
 {
+    
     "codProd": "1",
     "status": "andamento"
+     
 }
+
 
 Faz atualização do status a vontade para o "codProd" do pedido. "Atualiza todos os pedidos que o produto de tal código foi feito.
 
 DELETE:http://localhost:9090/admin/produto
 
 {
+    
     "cod": "20"
+     
 }
+
 
 Rota que deleta o produto apartir da "cod" do produto.
